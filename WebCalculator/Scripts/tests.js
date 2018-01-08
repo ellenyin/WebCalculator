@@ -32,3 +32,13 @@ test("Add Test", function () {
     var expected = '30';
     equal(txtResult.value, expected, 'Expected value: ' + expected + ' Actual value: ' + txtResult.value);
 });
+
+test("Subtract Test", function () {
+    expect(1);
+    txtInput.value = '7';
+    txtResult.value = '20';
+    var btnMinus = document.getElementById('btnMinus');
+    QUnit.triggerEvent(btnMinus, "click");
+    var expected = '13';
+    equal(txtResult.value, expected, 'Expected value: ' + expected + ' Actual value: ' + txtResult.value);
+});

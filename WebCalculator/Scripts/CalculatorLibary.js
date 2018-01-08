@@ -9,9 +9,14 @@ function initialize() {
     txtResult = document.getElementById('txtResult');
 
     document.getElementById('btnPlus').addEventListener('click', plusClick, false);
+    document.getElementById('btnMinus').addEventListener('click', minusClick, false);
+
 }
 function plusClick() {
     txtResult.value = Number(txtResult.value) + Number(txtInput.value);
+}
+function minusClick() {
+    txtResult.value = Number(txtResult.value) - Number(txtInput.value);
 }
 
 function numberClick() {
