@@ -22,3 +22,13 @@ test("Button Click Test", function () {
         equal(txtInput.value.length, expectedLength, 'Expected string length: ' + expectedLength + ' Actual value: ' + txtInput.value.length);
     }
 });
+
+test("Add Test", function () {
+    expect(1);
+    txtInput.value = '10';
+    txtResult.value = '20';
+    var btnPlus = document.getElementById('btnPlus');
+    QUnit.triggerEvent(btnPlus, "click");
+    var expected = '30';
+    equal(txtResult.value, expected, 'Expected value: ' + expected + ' Actual value: ' + txtResult.value);
+});
