@@ -60,3 +60,27 @@ test("Clear Test", function () {
     equal(txtInput.value, expected, 'Expected value: ' + expected + ' Actual value: ' + txtInput.value);
     equal(txtResult.value, expected, 'Expected value: ' + expected + ' Actual value: ' + txtResult.value);
 });
+
+test("Add Test", function () {
+    expect(2);
+    txtInput.value = '12';
+    txtResult.value = '13';
+    QUnit.triggerEvent(btnPlus, "click");
+    var expected = '25';
+    equal(txtResult.value, expected, 'Expected value: ' + expected + ' Actual value: ' + txtResult.value);
+    expected = '0';
+    equal(txtInput.value, expected, 'Expected value: ' + expected + ' Actual value: ' + txtInput.value);
+});
+
+test("Subtract Test", function () {
+    expect(2);
+    txtInput.value = '12';
+    txtResult.value = '13';
+    QUnit.triggerEvent(btnMinus, "click");
+    var expected = '1';
+    equal(txtResult.value, expected, 'Expected value: ' + expected + ' Actual value: ' + txtResult.value);
+    expected = '0';
+    equal(txtInput.value, expected, 'Expected value: ' + expected + ' Actual value: ' + txtInput.value);
+});
+
+

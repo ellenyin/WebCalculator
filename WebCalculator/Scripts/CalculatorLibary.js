@@ -16,9 +16,11 @@ function initialize() {
 }
 function plusClick() {
     txtResult.value = Number(txtResult.value) + Number(txtInput.value);
+    clearEntry();
 }
 function minusClick() {
     txtResult.value = Number(txtResult.value) - Number(txtInput.value);
+    clearEntry();
 }
 
 function numberClick() {
