@@ -1,13 +1,13 @@
 ﻿module('Calculator Test Suite', { setup: function () { initialize(); } });
 
-test("Btn5 Click Test", function () {
+/*test("Btn5 Click Test", function () {
     expect(1);
     var btn = document.getElementById('btn5');
     QUnit.triggerEvent(btn, "click");
     var result = txtInput.value;
     var expected = '5';
     equal(result, expected, 'Expected value: ' + ' Actual value: ' + result);
-});
+});*/
 
 test("Button Click Test", function () {
     var buttonQuantity = 10;
@@ -41,4 +41,12 @@ test("Subtract Test", function () {
     QUnit.triggerEvent(btnMinus, "click");
     var expected = '13';
     equal(txtResult.value, expected, 'Expected value: ' + expected + ' Actual value: ' + txtResult.value);
+});
+
+test("Clear Entry Test", function () {
+    expect(1);
+    txtInput.value = '10';
+    QUnit.triggerEvent(btnClearEntry, "click");
+    var expected = '0';
+    equal(txtInput.value, expected, 'Expected value: ' + expected + ' Actual value: ' + txtInput.value);
 });

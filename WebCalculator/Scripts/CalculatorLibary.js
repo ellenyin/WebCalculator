@@ -10,6 +10,7 @@ function initialize() {
 
     document.getElementById('btnPlus').addEventListener('click', plusClick, false);
     document.getElementById('btnMinus').addEventListener('click', minusClick, false);
+    document.getElementById('btnClearEntry').addEventListener('click', clearEntry, false);
 
 }
 function plusClick() {
@@ -24,6 +25,9 @@ function numberClick() {
         this.innerText : txtInput.value + this.innerText;
 }
 
+function clearEntry() {
+    txtInput.value = '0';
+}
 /*function numberClick2() {
     if (txtInput.value == '0') {
         txtInput.value = this.innerText;
