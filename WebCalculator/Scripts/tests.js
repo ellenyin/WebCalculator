@@ -50,3 +50,13 @@ test("Clear Entry Test", function () {
     var expected = '0';
     equal(txtInput.value, expected, 'Expected value: ' + expected + ' Actual value: ' + txtInput.value);
 });
+
+test("Clear Test", function () {
+    expect(2);
+    txtInput.value = '10';
+    txtResult.value = '20';
+    QUnit.triggerEvent(btnClear, "click");
+    var expected = '0';
+    equal(txtInput.value, expected, 'Expected value: ' + expected + ' Actual value: ' + txtInput.value);
+    equal(txtResult.value, expected, 'Expected value: ' + expected + ' Actual value: ' + txtResult.value);
+});

@@ -11,6 +11,7 @@ function initialize() {
     document.getElementById('btnPlus').addEventListener('click', plusClick, false);
     document.getElementById('btnMinus').addEventListener('click', minusClick, false);
     document.getElementById('btnClearEntry').addEventListener('click', clearEntry, false);
+    document.getElementById('btnClear').addEventListener('click', clear, false);
 
 }
 function plusClick() {
@@ -27,6 +28,11 @@ function numberClick() {
 
 function clearEntry() {
     txtInput.value = '0';
+}
+
+function clear() {
+    txtInput.value = '0';
+    txtResult.value = '0';
 }
 /*function numberClick2() {
     if (txtInput.value == '0') {
