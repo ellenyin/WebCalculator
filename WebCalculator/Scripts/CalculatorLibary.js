@@ -12,7 +12,7 @@ function initialize() {
     document.getElementById('btnMinus').addEventListener('click', minusClick, false);
     document.getElementById('btnClearEntry').addEventListener('click', clearEntry, false);
     document.getElementById('btnClear').addEventListener('click', clear, false);
-
+    clear();
 }
 function plusClick() {
     txtResult.value = Number(txtResult.value) + Number(txtInput.value);
@@ -36,6 +36,8 @@ function clear() {
     txtInput.value = '0';
     txtResult.value = '0';
 }
+
+
 /*function numberClick2() {
     if (txtInput.value == '0') {
         txtInput.value = this.innerText;

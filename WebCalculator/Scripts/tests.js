@@ -1,5 +1,15 @@
 ﻿module('Calculator Test Suite', { setup: function () { initialize(); } });
 
+test("Initialize Test", function () {
+    expect(2);
+    txtInput.value = '0';
+    txtResult.value = '0';
+    var expected = '0';
+    equal(txtInput.value, expected, 'Expected value: ' + expected + ' Actual value: ' + txtInput.value);
+    equal(txtResult.value, expected, 'Expected value: ' + expected + ' Actual value: ' + txtResult.value);
+});
+
+
 /*test("Btn5 Click Test", function () {
     expect(1);
     var btn = document.getElementById('btn5');
@@ -8,6 +18,7 @@
     var expected = '5';
     equal(result, expected, 'Expected value: ' + ' Actual value: ' + result);
 });*/
+
 
 test("Button Click Test", function () {
     var buttonQuantity = 10;
