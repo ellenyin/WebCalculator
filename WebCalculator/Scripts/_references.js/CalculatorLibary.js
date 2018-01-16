@@ -9,7 +9,7 @@
 
     ns.initialize = function () {
         var calculator = new ns.Calculator();
-        $('button[id^="btn"]').on('click', calculator.numberClick);
+        $('button[class^="btnNumber"]').on('click', calculator.numberClick);
         $('#btnPlus').on('click', calculator.plusClick);
         $('#btnMinus').on('click', calculator.minusClick);
         $('#btnClearEntry').on('click', calculator.clearEntry);
