@@ -58,10 +58,13 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="CalculatorTests.html" />
+    <Content Include="ContactUs.html" />
+    <Content Include="Content\default.css" />
     <Content Include="Content\qunit.css" />
     <Content Include="default.html" />
-    <Content Include="Scripts\CalculatorLibary.js" />
-    <Content Include="Scripts\qunit.js" />
+    <Content Include="Scripts\_references.js\CalculatorLibary.js" />
+    <Content Include="Scripts\_references.js\jquery-3.2.1.js" />
+    <Content Include="Scripts\_references.js\qunit.js" />
     <Content Include="Scripts\tests.js" />
     <Content Include="Web.config" />
   </ItemGroup>
